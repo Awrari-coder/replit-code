@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import Hero from "@/components/sections/hero";
 import Services from "@/components/sections/services";
-import About from "@/components/sections/about";
+import Pricing from "@/components/sections/pricing";
+import FAQ from "@/components/sections/faq";
 import Contact from "@/components/sections/contact";
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
     >
       <Hero />
       <Services />
-      <About />
+      <Pricing />
+      <FAQ />
       <Contact />
     </motion.div>
   );
