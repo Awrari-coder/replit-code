@@ -8,18 +8,19 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen relative bg-gradient-to-br from-primary/5 to-primary/10">
-      <div className="container mx-auto px-4 py-20 lg:py-32">
+    <section className="min-h-screen relative bg-gradient-to-br from-background to-primary/5">
+      <div className="absolute inset-0 bg-grid-white/25" />
+      <div className="container relative mx-auto px-4 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <h1 className="text-5xl/tight md:text-6xl/tight font-extrabold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent tracking-tight">
               AI-Powered Digital Marketing Solutions
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg/relaxed text-muted-foreground mb-8 max-w-xl">
               Transform your digital presence with our cutting-edge AI technology. 
               We deliver data-driven results through automated content creation, 
               social media management, and targeted advertising campaigns.
@@ -27,7 +28,7 @@ export default function Hero() {
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="group"
+              className="group font-medium"
             >
               Get Started
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -39,11 +40,14 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <img
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-              alt="AI Technology"
-              className="rounded-lg shadow-2xl"
-            />
+            <div className="relative rounded-lg overflow-hidden shadow-2xl aspect-video">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+                alt="AI Marketing Dashboard"
+                className="object-cover w-full h-full"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
