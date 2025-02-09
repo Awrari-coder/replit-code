@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { insertInquirySchema } from "@shared/schema";
 
 export function registerRoutes(app: Express): Server {
+  // API Routes
   app.post("/api/inquiries", async (req, res) => {
     try {
       const inquiry = insertInquirySchema.parse(req.body);
@@ -11,6 +12,16 @@ export function registerRoutes(app: Express): Server {
       res.json(result);
     } catch (error) {
       res.status(400).json({ message: "Invalid inquiry data" });
+    }
+  });
+
+  // Ensure all non-API routes are handled by the frontend
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api")) {
+      next();
+    } else {
+      // Let Vite handle the frontend routing
+      next();
     }
   });
 
