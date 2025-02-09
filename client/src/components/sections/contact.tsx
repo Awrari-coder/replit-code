@@ -124,6 +124,17 @@ export default function Contact() {
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
+                        <SelectItem value="graphic-design">Graphic Design Services</SelectItem>
+                        <SelectItem value="illustrations">Custom Illustrations</SelectItem>
+                        <SelectItem value="presentations">Presentation Design</SelectItem>
+                        <SelectItem value="motion">Motion Graphics</SelectItem>
+                        <SelectItem value="video">Video & Reel Editing</SelectItem>
+                        <SelectItem value="social-strategy">Social Media Strategy</SelectItem>
+                        <SelectItem value="social-ads">Social Media Advertising</SelectItem>
+                        <SelectItem value="community">Community Management</SelectItem>
+                        <SelectItem value="analytics">Social Media Analytics</SelectItem>
+                        <SelectItem value="automation">AI Chatbots & Automation</SelectItem>
+                        <SelectItem value="reputation">Reputation Management</SelectItem>
                         <SelectItem value="content">AI Content Generation</SelectItem>
                         <SelectItem value="social">Social Media Automation</SelectItem>
                         <SelectItem value="ads">Ad Copywriting</SelectItem>

@@ -6,7 +6,13 @@ import {
   Presentation, 
   Play, 
   Video,
-  Rocket
+  Share2,
+  BarChart3,
+  MessageSquare,
+  TrendingUp,
+  Bot,
+  Hash,
+  Star
 } from "lucide-react";
 
 const services = [
@@ -32,13 +38,43 @@ const services = [
   },
   {
     icon: Video,
-    title: "Video Editing",
-    description: "Professional post-production video editing to make your content shine."
+    title: "Video & Reel Editing",
+    description: "Professional video editing and social media reel creation to maximize engagement."
   },
   {
-    icon: Rocket,
-    title: "AI-Powered Marketing",
-    description: "Automated content creation and optimization using cutting-edge AI technology."
+    icon: Share2,
+    title: "Social Media Strategy",
+    description: "Comprehensive strategy development, content planning, and cross-platform integration."
+  },
+  {
+    icon: BarChart3,
+    title: "Social Analytics",
+    description: "Detailed social media analytics, reporting, and performance optimization."
+  },
+  {
+    icon: MessageSquare,
+    title: "Community Management",
+    description: "Active engagement with your audience through comments, DMs, and brand mentions."
+  },
+  {
+    icon: TrendingUp,
+    title: "Social Media Advertising",
+    description: "Targeted ad campaigns across Facebook, Instagram, LinkedIn, TikTok, and Twitter."
+  },
+  {
+    icon: Bot,
+    title: "AI Integration",
+    description: "Smart chatbots, automation tools, and AI-powered content optimization."
+  },
+  {
+    icon: Hash,
+    title: "Content Strategy",
+    description: "Hashtag research, trend monitoring, and content scheduling for maximum impact."
+  },
+  {
+    icon: Star,
+    title: "Reputation Management",
+    description: "Proactive brand monitoring, review management, and profile optimization."
   }
 ];
 
